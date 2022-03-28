@@ -1,0 +1,28 @@
+### Restaurants Index
+GET http://localhost:3000/restaurants
+
+### Restaurants Show
+GET http://localhost:3000/restaurants/2
+
+### Restuarants Create
+POST http://localhost:3000/restaurants
+Content-Type: application/json
+
+{
+  "input_name": "Mcdonalds",
+  "input_rating": 1,
+  "input_notes": "just trash"
+}
+
+### Restaurants Update
+PATCH http://localhost:3000/restaurants/1
+Content-Type: application/json
+
+{
+  # "input_name": "Mcdonalds",
+  # "input_rating": 4,
+  "input_notes": "Wonderful drinks"
+}
+
+### Restaurants Destroy
+DELETE http://localhost:3000/restaurants/5
